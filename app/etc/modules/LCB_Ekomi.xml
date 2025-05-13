@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <LCB_Ekomi>
+            <active>true</active>
+            <codePool>local</codePool>
+        </LCB_Ekomi>
+    </modules>
+</config>

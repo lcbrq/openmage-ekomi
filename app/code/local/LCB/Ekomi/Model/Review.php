@@ -1,0 +1,11 @@
+<?php
+/**
+ * @author Tomasz Gregorczyk <tomasz@silpion.com.pl>
+ */
+class LCB_Ekomi_Model_Review extends Mage_Core_Model_Abstract
+{
+    protected function _construct()
+    {
+        $this->_init('lcb_ekomi/review');
+    }
+}
