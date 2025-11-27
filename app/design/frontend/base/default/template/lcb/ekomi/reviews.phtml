@@ -1,0 +1,40 @@
+<?php
+/**
+ * @var LCB_Ekomi_Block_Reviews $this
+ */
+$reviews = $this->getReviews();
+$rating = $this->getAverageRating();
+?>
+
+<div class="ekomi_reviews" style="text-align: center">
+    <h2><?= $this->__('Store reviews') ?></h2>
+
+    <div style="font-size: 48px; color: gold;">
+        <?php
+            $full = round($rating, 0, PHP_ROUND_HALF_UP);
+            echo str_repeat('★', $full) . str_repeat('☆', 5 - $full);
+        ?>
+    </div>
+
+    <p style="text-align:center;">
+        <?= $rating ?>/5 <?= $this->__('average rating from %s reviews', count($reviews)) ?>
+    </p>
+
+    <table width="100%">
+        <tr>
+            <?php foreach (array_slice($reviews->getItems(), 0, 5) as $review): ?>
+            <td style="width: 20%">
+                <div><?= date('Y-m-d', $review->getSubmitted()) ?></div>
+                <div style="font-size: 20px; color: gold;">
+                    <?php
+                        $rating = $review->getRating();
+                        $full = round($rating, 0, PHP_ROUND_HALF_UP);
+                        echo str_repeat('★', $full) . str_repeat('☆', 5 - $full);
+                    ?>
+                </div>
+                <div><?= $review->getReview() ?></div>
+            </td>
+            <?php endforeach ?>
+        </tr>
+    </table>
+</div>

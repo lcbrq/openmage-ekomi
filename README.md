@@ -1,3 +1,3 @@
 #LCB_Ekomi
 
-Simple data storage for Ekomi (zaufane.pl) reviews.
+Simple data storage and CMS widget for Ekomi (zaufane.pl) reviews.

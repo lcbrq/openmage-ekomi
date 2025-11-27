@@ -41,6 +41,17 @@
             </lcb_ekomi_setup>
         </resources>
     </global>
+    <frontend>
+        <translate>
+            <modules>
+                <lcb_ekomi>
+                    <files>
+                        <default>LCB_Ekomi.csv</default>
+                    </files>
+                </lcb_ekomi>
+            </modules>
+        </translate>
+    </frontend>
     <crontab>
         <jobs>
             <lcb_ekomi_fetch_reviews>

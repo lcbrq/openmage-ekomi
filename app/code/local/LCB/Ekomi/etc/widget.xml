@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<widgets>    
+    <ekomi_widget type="lcb_ekomi/widget" translate="name description" module="lcb_ekomi">
+        <name>Ekomi Reviews</name>
+        <description type="desc">Widget for Ekomi reviews display</description>
+    </ekomi_widget>
+</widgets>

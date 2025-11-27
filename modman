@@ -1,2 +1,4 @@
 app/code/local/LCB/Ekomi
+app/design/frontend/base/default/template/lcb/ekomi
+app/locale/pl_PL/LCB_Ekomi.csv
 app/etc/modules/LCB_Ekomi.xml
