@@ -51,6 +51,20 @@
                 </lcb_ekomi>
             </modules>
         </translate>
+        <csp>
+            <script-src>
+                <ekomiapps>*.ekomiapps.de</ekomiapps>
+            </script-src>
+            <img-src>
+                <ekomiapps>*.ekomiapps.de</ekomiapps>
+            </img-src>
+            <connect-src>
+                <ekomiapps>*.ekomiapps.de</ekomiapps>
+            </connect-src>
+            <style-src>
+                <ekomiapps>*.ekomiapps.de</ekomiapps>
+            </style-src>
+        </csp>
     </frontend>
     <crontab>
         <jobs>
