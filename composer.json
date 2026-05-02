@@ -1,5 +1,6 @@
 {
     "name": "lcbrq/openmage-ekomi",
+    "version": "1.0.2",
     "license": ["MIT"],
     "type": "magento-module",
     "description": "Simple Ekomi storage for reviews."

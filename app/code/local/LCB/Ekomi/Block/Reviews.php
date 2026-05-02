@@ -25,13 +25,18 @@ class LCB_Ekomi_Block_Reviews extends Mage_Core_Block_Template
     }
 
     /**
-     * @return float
+     * @return float|null
      */
     public function getAverageRating()
     {
         $reviews = $this->getReviews();
+        $reviewsCount = count($reviews);
 
-        $averageRating = array_sum($reviews->getColumnValues('rating')) / count($reviews);
+        if (!$reviewsCount) {
+            return null;
+        }
+
+        $averageRating = array_sum($reviews->getColumnValues('rating')) / $reviewsCount;
 
         return round($averageRating, 2);
     }
